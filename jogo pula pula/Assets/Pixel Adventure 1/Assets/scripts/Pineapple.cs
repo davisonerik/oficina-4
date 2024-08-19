@@ -8,6 +8,7 @@ public class Pineapple : MonoBehaviour
     private CircleCollider2D circle;
 
     public GameObject collected;
+    public int Score;
     
     void Start()
     {
@@ -25,6 +26,9 @@ public class Pineapple : MonoBehaviour
       sr.enabled = false;
       circle.enabled = false;
       collected.SetActive(true);
+
+      GameController.instance.totalScore += Score;
+      
       Destroy(gameObject, 0.3f);
     }
     
