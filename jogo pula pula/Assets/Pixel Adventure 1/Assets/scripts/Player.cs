@@ -86,6 +86,11 @@ public class Player : MonoBehaviour
          anim.SetBool( "Jump", false);
 
        }
+       if(collision.gameObject.tag == "Spike")
+       {
+         Debug.Log("TOCOU O ESPINHO");
+
+       }
     }
 
     void OnCollisionExit2D(Collision2D collision)

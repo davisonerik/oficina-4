@@ -22,6 +22,21 @@ public class PlataformaNova : MonoBehaviour
          Invoke("Falling", fallingTime);
 
        }
+       
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if(collider.gameObject.tag == "Player")
+    
+    {
+      if(collision.gameObject.layer == 9)
+       
+        Destroy(gameObject);
+
+       }
+    }
+    
+    
+
     }
     void Falling()
     {
