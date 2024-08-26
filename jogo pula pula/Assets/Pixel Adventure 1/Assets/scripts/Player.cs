@@ -88,7 +88,8 @@ public class Player : MonoBehaviour
        }
        if(collision.gameObject.tag == "Spike")
        {
-         Debug.Log("TOCOU O ESPINHO");
+         GameController.instance.ShowGameOver();
+         Destroy(gameObject);
 
        }
     }
