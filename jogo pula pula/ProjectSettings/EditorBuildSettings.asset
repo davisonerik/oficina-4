@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fase 2.unity
     guid: 601acc027beabef4a8fb32f19b82b0ae
+  - enabled: 1
+    path: Assets/Scenes/cutscene.unity
+    guid: 187087c0ce8a72148a9cfa88533a626d
   m_configObjects: {}
